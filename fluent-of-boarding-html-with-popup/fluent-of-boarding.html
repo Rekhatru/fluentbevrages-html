@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+    <style>
+        @font-face {
+            font-family: 'arial_medium';
+            src: url('fonts/Arial-Mdm.eot');
+            src: url('fonts/Arial-Mdm.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Arial-Mdm.woff2') format('woff2'),
+                url('fonts/Arial-Mdm.woff') format('woff'),
+                url('fonts/Arial-Mdm.ttf') format('truetype');
+            font-weight: 500;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'arial_bold';
+            src: url('fonts/Arial-BoldMT.eot');
+            src: url('fonts/Arial-BoldMT.eot?#iefix') format('embedded-opentype'),
+                url('fonts/Arial-BoldMT.woff2') format('woff2'),
+                url('fonts/Arial-BoldMT.woff') format('woff'),
+                url('fonts/Arial-BoldMT.ttf') format('truetype');
+            font-weight: bold;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'aldine_721regular';
+            src: url('fonts/aldine_721_regular-webfont.woff2') format('woff2'), url('fonts/aldine_721_regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'plaak56-expandedblack';
+            src: url('fonts/plaak-expandedblack-webfont.woff2') format('woff2'), url('fonts/plaak-expandedblack-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .page-id-198 #standard-page .centre>p {
+            margin: 0;
+        }
+
+        section#standard-page {
+            position: relative;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: 'aldine_721regular';
+        }
+
+        #language-toggle a {
+            font-family: 'plaak56-expandedblack';
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
+            transition: all 0.2s ease-out;
+        }
+
+        #language-toggle .spacer:last-child {
+            display: none;
+        }
+
+        .page-id-198 #language-toggle.en a.en,
+        .page-id-198 #language-toggle.fr a.fr {
+            color: #ECFF97;
+        }
+
+        .cst_logo_sec-2022 a#logo img {
+            max-width: 100%;
+        }
+
+        .page-id-198 {
+            background: #6063E1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .page-id-198 #standard-page .centre>.logo {
+            display: none;
+        }
+
+        .cst_logo_sec-2022 a#logo {
+            position: absolute;
+            top: -148px;
+            right: 45px;
+            margin: 0;
+            z-index: 999;
+            width: 100px;
+            height: 122px;
+            text-indent: 0;
+            transition: none;
+        }
+
+        .page-id-198 div#language-toggle span.spacer {
+            margin: 0 10px;
+        }
+
+        .page-id-198 #language-toggle.en a.en,
+        .page-id-198 #language-toggle.fr a.fr {
+            color: #ECFF97;
+        }
+
+        .update_fluent_section_outer {
+            max-width: 1410px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .page-id-198 #standard-page .logo {
+            margin: 0;
+            display: block;
+            position: absolute;
+            right: 45px;
+            top: -147px;
+            z-index: 99;
+        }
+
+        .page-id-198 div#language-toggle {
+            max-width: 1757px;
+            padding: 30px 45px;
+            position: relative;
+            height: 180px;
+            display: flex;
+            align-items: center;
+            top: 0;
+            width: 100%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 1;
+            font-family: 'plaak56-expandedblack';
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .page-id-198 #standard-page .centre {
+            max-width: 1757px;
+            padding: 0 45px;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .update_fluent_title_banner {
+            padding: 130px 0;
+        }
+
+        .update_fluent_grid {
+            padding: 100px 0;
+        }
+
+        #standard-page .update_fluent_section_outer h1 {
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 120px;
+            font-family: 'aldine_721regular';
+            text-transform: none;
+            text-align: left;
+            margin: 0;
+        }
+
+        .update_fluent_section_outer img {
+            max-width: 100%;
+        }
+
+        .update_fluent_section_outer .heading2 {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 60px;
+            color: #fff;
+            margin: 0;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        .update_fluent_section_outer .heading2:after {
+            position: absolute;
+            content: '';
+            height: 3px;
+            width: 180px;
+            background-color: #ECFF97;
+            left: 0;
+            bottom: 0;
+        }
+
+        .update_fluent_repeater h3 {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 34px;
+            text-transform: uppercase;
+            color: #27085F;
+            margin: 0 0 20px;
+            font-family: 'arial_bold';
+        }
+
+        .update_fluent_section_outer p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .update_fluent_repeater {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .update_fluent_right_col p:last-child {
+            margin-bottom: 0;
+        }
+
+        .update_fluent_grid_title {
+            margin-bottom: 60px;
+        }
+
+        .update_fluent_left_col {
+            width: 18.2%;
+        }
+
+        .update_fluent_right_col {
+            width: 81.8%;
+            padding-left: 60px;
+            padding-right: 8px;
+        }
+
+        .update_fluent_grid .text-month {
+            margin-top: 30px;
+        }
+
+        .update_fluent_logo_wrap {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: -30px;
+            margin-right: -30px;
+        }
+
+        .update_fluent_logo_wrap .logo_grid {
+            padding: 0 30px;
+        }
+
+        .update_fluent_repeater {
+            padding: 0 0 60px;
+            border-bottom: solid 1px #EEEFF4;
+            margin-bottom: 60px
+        }
+
+        .update_fluent_repeater:last-child {
+            padding-bottom: 0;
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+
+        .custom_fluent_footer {
+            padding: 45px 0 30px;
+        }
+
+        #standard-page .custom_fluent_footer .cst-footer-nav ul {
+            margin: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            padding: 0;
+        }
+
+        #standard-page .custom_fluent_footer .cst-footer-nav ul li {
+            margin-right: 60px;
+            line-height: normal;
+            margin-bottom: 0;
+            padding: 10px 0;
+        }
+
+        #standard-page .custom_fluent_footer .cst-footer-nav ul a {
+            font-size: 20px;
+            line-height: 2;
+            cursor: pointer;
+            color: #fff;
+            font-family: 'aldine_721regular';
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .update_fluent_title h1 span.yellow-text {
+            color: #ECFF97;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-family: 'arial_bold';
+        }
+
+        .update_fluent_grid .text-month span {
+            font-size: 24px;
+            line-height: 40px;
+            font-weight: 700;
+        }
+
+        #standard-page .custom_fluent_footer .cst-footer-nav ul a:hover {
+            color: #ECFF97;
+        }
+
+        .cst_fluent-mobile-toggle,
+        .cst-fluent-menu-mobile {
+            display: none;
+        }
+
+        .cst_fluent-mobile-toggle button {
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 60px;
+            height: 40px;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .cst_fluent-mobile-toggle button img.close {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .open-menu .cst_fluent-mobile-toggle button img.close {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .open-menu .cst_fluent-mobile-toggle button img.open {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        /* popup */
+        .popupOuter iframe {
+            min-height: 1390px;
+            border: 0;
+        }
+
+        .popupOuter {
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+            background: rgb(0 0 0 / 70%);
+            z-index: 999999;
+            display: none;
+            overflow-y: auto;
+        }
+
+        .popupShow .popupOuter {
+            display: block;
+        }
+
+        .popupOuter .popupInner {
+            padding: 160px 25px;
+            display: table;
+            height: 100%;
+            width: 100%;
+        }
+
+        .modalClose {
+            position: absolute;
+            right: 20px;
+            width: 25px;
+            height: 25px;
+            top: 20px;
+            cursor: pointer;
+        }
+
+        .popupOuter .popupInner .popupTableCell {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .popupOuter .popupInner .popupContent p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .popupOuter .popupInner .popupContent {
+            max-width: 750px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 30px;
+            position: relative;
+        }
+
+        .popupShow,
+        .popupShow body {
+            overflow: hidden !important;
+        }
+
+        .modalClose img {
+            height: auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        .popupOuter .popupInner .frm_form_title {
+            font-family: 'aldine_721regular', sans-serif;
+            font-size: 48px;
+            line-height: 48px;
+            font-weight: 400;
+            margin: 0 0 30px;
+            color: #27085F;
+            padding-right: 40px;
+        }
+
+        .popupOuter .popupInner span {
+            font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #6063E1;
+        }
+
+        @media (max-width: 1600px) {
+            .popupOuter .popupInner {
+                padding: 90px 25px;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .update_fluent_title_banner {
+                padding: 100px 0;
+            }
+
+            #standard-page .update_fluent_section_outer h1 {
+                font-size: 65px;
+                line-height: 85px;
+            }
+
+            .update_fluent_section_outer .heading2 {
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 50px;
+                padding-bottom: 15px;
+            }
+
+            .update_fluent_grid {
+                padding: 0;
+            }
+
+            .update_fluent_repeater:last-child {
+                margin-bottom: 60px;
+            }
+
+            .update_fluent_logo_wrap {
+                margin-bottom: 40px;
+            }
+
+            .update_fluent_right_col {
+                padding-left: 40px;
+                padding-right: 0;
+            }
+        }
+
+        @media (max-width: 767.5px) {
+
+            .popupOuter .popupInner .popupContent {
+                max-width: 480px;
+            }
+            .popupOuter .popupInner .popupContent iframe {
+                 min-height: 1920px;
+            }
+            #standard-page .cst-fluent-menu-mobile ul li:last-child {
+                border-bottom: none;
+            }
+
+            .page-id-198 div#language-toggle {
+                display: none;
+            }
+
+            #standard-page .update_fluent_section_outer h1 {
+                font-weight: 700;
+            }
+
+            .page-id-198 div#language-toggle {
+                padding: 20px 25px;
+                height: 160px;
+            }
+
+            .cst_logo_sec-2022 a#logo {
+                top: 0px;
+                right: 0;
+                position: relative;
+            }
+
+            .page-id-198 #standard-page .centre {
+                padding: 0 25px;
+            }
+
+            .update_fluent_section_outer .heading2 {
+                font-size: 36px;
+                line-height: 46px;
+                padding-bottom: 30px;
+            }
+
+            .update_fluent_left_col {
+                width: 100%;
+                text-align: center;
+                min-height: 158px;
+                margin-bottom: 10px;
+            }
+
+            .update_fluent_right_col {
+                padding-left: 0;
+                width: 100%;
+            }
+
+            .update_fluent_logo_wrap {
+                margin: 0 0 60px;
+                flex-wrap: wrap;
+            }
+
+            .update_fluent_logo_wrap .logo_grid {
+                padding: 0 0 80px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .update_fluent_logo_wrap .logo_grid:last-child {
+                padding-bottom: 0;
+            }
+
+            .custom_fluent_footer {
+                padding: 40px 0;
+            }
+
+            #standard-page .custom_fluent_footer .cst-footer-nav ul li {
+                margin: 0 0 30px;
+                text-align: center;
+                width: 100%;
+                padding: 0;
+            }
+
+            #standard-page .custom_fluent_footer .cst-footer-nav ul li:last-child {
+                margin-bottom: 0;
+            }
+
+            #standard-page .update_fluent_section_outer h1 {
+                font-size: 52px;
+                line-height: 64px;
+                text-align: center;
+            }
+
+            .update_fluent_title_banner {
+                margin-bottom: 37px;
+            }
+
+            .cst_fluent-header {
+                position: relative;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px 0;
+                align-items: center;
+            }
+
+            .cst-fluent-menu-mobile {
+                position: absolute;
+                top: 100%;
+                height: 0;
+                width: 100vw;
+                left: -25px;
+                right: -25px;
+                background: #6063E1;
+                z-index: 9999;
+                transition: 0.5s;
+                overflow: hidden;
+                display: block;
+            }
+
+            .open-menu .cst-fluent-menu-mobile {
+                display: block;
+                height: calc(100vh - 158px);
+            }
+
+            #standard-page .cst-fluent-menu-mobile ul {
+                padding: 0 25px;
+                margin: 0;
+                list-style: none;
+            }
+
+            #standard-page .cst-fluent-menu-mobile ul li {
+                margin: 0;
+                padding: 30px 0;
+                border-bottom: solid 1px #EEEFF4;
+            }
+
+            #standard-page .cst-fluent-menu-mobile a {
+                font-size: 24px;
+                line-height: 28px;
+                font-family: 'plaak56-expandedblack';
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: 400;
+            }
+
+            #standard-page .cst-fluent-menu-mobile a.active-lang {
+                color: #ECFF97;
+            }
+
+            .cst_fluent-mobile-toggle {
+                display: block;
+            }
+
+            body.open-menu {
+                overflow: hidden;
+            }
+
+            .update_fluent_grid .text-month span {
+                line-height: 30px;
+            }
+        }
+
+        @media (max-width: 481px) {
+            .update_fluent_content {
+                max-width: 270px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 415px) {
+            .popupOuter .popupInner .frm_form_title{
+                font-size: 34px;
+            }
+            .update_fluent_repeater h3 {
+                font-size: 28px;
+            }
+
+            .popupOuter .popupInner .popupContent {
+                padding: 20px;
+            }
+            .popupOuter .popupInner .popupContent iframe {
+                min-height: 2030px;
+            }
+        }
+    </style>
+</head>
+
+<body class="page-id-198">
+    <div id="language-toggle" class="en">
+        <a href="fluent-of-boarding.html" title="English" class="language-link en" data-hovered="en">en</a><span
+            class="spacer"> — </span><a href="courant-dembarquement.html" title="Français" class="language-link fr"
+            data-hovered="fr">fr</a><span class="spacer"> — </span>
+    </div>
+
+    <section id="standard-page">
+        <div class="centre">
+            <div class="cst_fluent-header">
+                <div class="cst_fluent-mobile-toggle"><button><img src="img/hamburger-bar.svg" alt="Hamburger icon"
+                            class="open"><img src="img/hamburger-close.svg" alt="Hamburger close"
+                            class="close"></button>
+                </div>
+                <div class="cst_logo_sec-2022"><a href="/" title="Fluent" id="logo" class="frame-0"><img
+                            src="img/fluent-logo.svg" alt="Fluent Beverages"></a>
+                </div>
+                <div class="cst-fluent-menu-mobile">
+                    <ul>
+                        <li><a href="fluent-of-boarding.html" class="active-lang">English</a></li>
+                        <li><a href="courant-dembarquement.html">French</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="update_fluent_section_outer">
+                <div class="update_fluent_title_banner">
+                    <div class="update_fluent_title">
+                        <div class="update_fluent_content">
+                            <h1 class="heading1">Read an <span class="yellow-text">UPDATE</span> on Fluent <span
+                                    style="display: inline-block;">beverages below.</span></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="update_fluent_grid">
+                    <div class="update_fluent_grid_title">
+                        <h2 class="heading2">An Update on Fluent Beverages in Canada</h2>
+                        <div class="text-month"><span>April 1, 2022</span></div>
+                    </div>
+                    <div class="update_fluent_repeater">
+                        <div class="update_fluent_left_col">
+                            <img src="img/fluent-beverages.svg" alt="A Statement from Fluent Beverages" />
+                        </div>
+                        <div class="update_fluent_right_col">
+                            <h3>A Statement from Fluent Beverages</h3>
+                            <p>“Fluent has decided to stop operations in Canada. We want to thank our employees,
+                                partners,
+                                and
+                                customers for their support over the past three years in helping us build one of the top
+                                CBD
+                                beverage portfolios in Canada.”</p>
+                        </div>
+                    </div>
+                    <div class="update_fluent_repeater">
+                        <div class="update_fluent_left_col">
+                            <img src="img/labatt.svg" alt="A Statement from Labatt" />
+                        </div>
+                        <div class="update_fluent_right_col">
+                            <h3>A Statement from Labatt</h3>
+                            <p>“When Labatt announced the creation of Fluent in 2018, Fluent set out to research
+                                non-alcohol
+                                cannabis beverages in Canada. Over the past three years through Fluent, we have gained
+                                deep
+                                category insights into the cannabis sector and consumer preferences, expanded our
+                                research
+                                and
+                                development capabilities, and worked with some exceptional talent. The learnings from
+                                Fluent
+                                will be used to evaluate future opportunities within the category and we will continue
+                                to
+                                monitor the cannabis sector closely.”</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="update_fluent_grid">
+                    <div class="update_fluent_grid_title">
+                        <h2 class="heading2">For information on the following brands please contact:</h2>
+                    </div>
+                    <div class="update_fluent_logo_wrap">
+                        <div class="logo_grid">
+                            <a href="https://www.everie.ca/en/" target="_blank" aria-label="everie-url"
+                                rel="noopener"><img src="img/everie.svg" alt="Everie" /></a>
+                        </div>
+                        <div class="logo_grid">
+                            <a href="https://kitsetbeverages.com/en/" target="_blank" aria-label="kitset-url"
+                                rel="noopener"><img src="img/kitset.svg" alt="KIT SET" /></a>
+                        </div>
+                        <div class="logo_grid">
+                            <a href="https://www.7wandersbeverages.com/en/" target="_blank"
+                                aria-label="7wandersbeverages-url" rel="noopener"><img src="img/7wanders.svg"
+                                    alt="7 Wanders" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_fluent_footer">
+                <div class="cst-footer-nav">
+                    <ul>
+                        <li><a href="https://fluentbeverages.com/en/terms-and-conditions">Terms & Conditions</a></li>
+                        <li><a href="https://fluentbeverages.com/en/privacy-policy">Privacy Policy</a></li>
+                        <li><a class="modalOpen">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="popupOuter">
+        <div class="popupInner">
+            <div class="popupTableCell">
+                <div class="popupContent"><span class="modalClose">
+                        <img src="img/popupclose.svg" alt="Close"></span>
+                    <div class="formFrame">
+                        <h2 class="frm_form_title">Contact <span>US</span></h2>
+                        <iframe src="https://sobeys.formstack.com/forms/fluentbeverages" title="Fluentbeverages"
+                            width="100%" height="1280" border=0></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery(".cst_fluent-mobile-toggle button").click(function () {
+                jQuery("body").toggleClass("open-menu");
+            });
+            jQuery(".modalOpen").click(function () {
+                jQuery("html").addClass("popupShow");
+            });
+            jQuery(".modalClose").click(function () {
+                jQuery("html").removeClass("popupShow");
+            });
+        });
+    </script>
+</body>
+
+</html>
